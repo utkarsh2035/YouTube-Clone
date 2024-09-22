@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YouTube | Clone</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/x-icon" href="/youtubeImages/favicon.ico">
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <header class="header_container">
+        <div id="navbar">
+            <div class="logo_and_btn">
+                <div class="toggle_btn">
+                <i class="fa-solid fa-bars fa-xl"></i> 
+            </div>    
+                <div class="logo_image">
+                    <a href="#"><img src="/youtubeImages/nav_logoo.jpg" alt="" loading="lazy" class="nav_logo">
+                    </a>
+                </div>       
+            </div>
+            <div class="search_container">
+                <input type="search" id="search_video" placeholder="Search">
+                <a href="#"><img src="/youtubeImages/icons8-magnifying-glass-48.png" alt="" class="search_icon"> 
+                </a>
+            </div>
+            <div class="mic">
+                <i class="fa-solid fa-microphone fa-xl" id="nav_mic"></i>
+            </div>
+            <div class="user_option">
+                <div class="video_creator">
+                    <i class="fa-solid fa-video fa-xl"></i>
+                </div>
+                <div class="bell_icon">
+                    <i class="fa-regular fa-bell fa-xl"></i>
+                </div>
+                <div class="user_logo">
+                    <i class="fa-solid fa-circle-user fa-xl"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+    <aside class="aside">
+        <div class="sidebar_container">
+            <div class="first_box">
+                <div class="first_home">
+                    <i class="fa-solid fa-house fa-l" id="js_home"></i>
+                    <span class="home">Home</span>
+                </div>
+                <div class="first_shorts">
+                    <img src="/youtubeImages/youtube-shorts-icon.png" alt="" class="short_icon"> 
+                    <span class="short_word">Shorts</span>
+                </div>
+                <div class="first_subscriptions">
+                    <img src="/youtubeImages/subscription.png" alt="" class="subscribe_icon"> 
+                    <span class="subs_word">Subscriptions</span>
+                </div>
+            </div>
+            <div class="second_box">
+                <div class="second_you">
+                    <span class="youfirst_word">You</span>
+                    <span class="greater">                    <i class="fa-solid fa-greater-than"></i>
+                    </span>
+                </div>
+                <div class="second_yourchannel">
+                    <img src="/youtubeImages/noun-profile-1865156.png" alt="" class="account_image">
+                    <span class="channel_word">Your channel</span>
+                </div>
+                <div class="second_history">
+                    <i class="fa-solid fa-clock-rotate-left"></i>
+                    <span class="history_word">History</span>
+                </div>
+                <div class="second_yourvideos">
+                    <img src="/youtubeImages/noun-play-square-4684839.png" alt="" class="video_image">
+                    <span class="video_word">Your videos</span>
+                </div>
+                <div class="second_watchlater">
+                    <i class="fa-regular fa-clock"></i>
+                    <span class="watch_word">Watch later</span>
+                </div>
+                <div class="second_showmore">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <span class="show_word">Show More</span>
+                </div>
+            </div>
+            <div class="third_box">
+                <div class="third_subscribe">
+                    <span class="subscribe_word">Subscriptions</span>
+                </div>
+                <div class="third_college">
+                    <img src="/youtubeImages/college_wallah.jpg" alt="" class="college_wallah">
+                    <span class="College_word">College Wallah</span>
+                </div>
+                <div class="third_apna">
+                    <img src="/youtubeImages/apna_college.jpg" alt="" class="apna_image">
+                    <span class="apna_word">Apna College</span>
+                </div>
+                <div class="third_trakin">
+                    <img src="/youtubeImages/trakin_tech.png" alt="" class="trakin_image">
+                    <span class="trakin_word">Trakin Tech</span>
+                </div>
+                <div class="third_scaler">
+                    <img src="/youtubeImages/scaler.png" alt="" class="scaler_image">
+                    <span class="scaler_word">SCALER</span>
+                </div>
+                <div class="third_josh">
+                    <img src="/youtubeImages/josh_talks.png" alt="" class="josh_image">
+                    <span class="josh_word">Josh Talks</span>
+                </div>
+                <div class="third_isro">
+                    <img src="/youtubeImages/isro_image.jpg" alt="" class="isro_image">
+                    <span class="isro_word">ISRO</span>
+                </div>
+                <div class="third_music">
+                    <img src="/youtubeImages/zee_music.jpg" alt="" class="music_image">
+                    <span class="music_word">Zee Music</span>
+                </div>
+                <div class="third_more">
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <span class="more_word">Show 15 more</span>
+                    
+                </div>
+            </div>
+            <div class="fourth_box">
+                <div class="fourth_exp">
+                    <span class="explore_word">Explore</span>
+                </div>
+                <div class="fourth_trending">
+                    <i class="fa-solid fa-fire-flame-curved fa-shake fa-l"></i>
+                    <span class="trending_word">Trending</span>
+                </div>
+                <div class="fourth_shopping">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="shopping_word">
+                    Shopping</span>
+                </div>
+                <div class="fourth_song">
+                    <i class="fa-solid fa-music fa-l"></i>
+                    <span class="music_word">Music</span>
+                </div>
+                <div class="fourth_films">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span class="films_word">Films</span>
+                </div>
+                <div class="fourth_live">
+                    <img src="/youtubeImages/recording_image.png" alt="" class="recording_image">
+                    <span class="live_word">Live</span>
+                </div>
+                <div class="fourth_gaming">
+                    <i class="fa-solid fa-gamepad"></i>
+                    <span class="gaming_word">Gaming</span>
+                </div>
+                <div class="fourth_news">
+                    <i class="fa-regular fa-newspaper"></i>
+                    <span class="news_word">News</span>
+                </div>
+                <div class="fourth_sport">
+                    <i class="fa-solid fa-trophy"></i>
+                    <span class="trophy_word">Sport</span>
+                </div>
+                <div class="fourth_learning">
+                    <i class="fa-regular fa-lightbulb"></i>
+                    <span class="learn_word">Learning</span>
+                </div>
+                <div class="fourth_fashion_beauty">
+                    <i class="fa-solid fa-vest-patches"></i>
+                    <span class="fashion_word">Fashion & beauty</span>
+                </div>
+                <div class="fourth_podcasts">
+                    <i class="fa-solid fa-podcast"></i>
+                    <span class="pod_word">Podcasts</span>
+                </div>
+            </div>
+
+            <div class="fifth_box">
+                <div class="fifth_from">
+                    <span class="from_word">More from YouTube</span>
+                </div>
+                <div class="fifth_premium">
+                    <img src="/youtubeImages/youtube_premium.png" alt="" class="premium_image">
+                    <span class="premium_word">YouTube Premium</span>
+                </div>
+                <div class="fifth_studio">
+                    <img src="/youtubeImages/youtube_studio.png" alt="" class="studio_image">
+                    <span class="studio_word">YouTube Studio</span>
+                </div>
+                <div class="fifth_music">
+                    <img src="/youtubeImages/yuoutube_music.png" alt="" class="fifth_image">
+                    <span class="music_word">YouTube Music</span>
+                </div>
+                <div class="fifth_kids">
+                    <img src="/youtubeImages/youtube_kids.png" alt="" class="kids_image">
+                    <span class="kids_word">
+                        YouTube Kids
+                    </span>
+                </div>
+            </div>
+            <div class="sixth_box">
+                <div class="sixth_setting">
+                    <i class="fa-solid fa-gear"></i>
+                    <span class="setting_word">Settings</span>
+                </div>
+                <div class="sixth_report">
+                    <i class="fa-regular fa-flag"></i>
+                    <span class="report_word">Report history</span>
+                </div>
+                <div class="sixth_help">
+                    <i class="fa-regular fa-circle-question"></i>
+                    <span class="help_word">Help</span>
+                </div>
+                <div class="sixth_send">
+                    <i class="fa-regular fa-message"></i>
+                    <span class="send_word">Send feedback</span>
+                </div>
+            </div>
+            <div class="seventh_box">
+                <div class="seventh_fpara">
+                    <p>About Press Copyright Contact Us Creator Advertise Developers</p>
+                </div>
+                <div class="seventh_spara">
+                    <p>Terms Privacy Policy & Saftey How TouTube Works Test New Features</p>
+                </div>
+                <div class="seventh_tpara">
+                    <p>&copy; 2023 Google LLC</p>
+                </div>
+            </div>
+        </div>
+    </aside>
+    <div class="filter">
+        <button class="filter_data" id="first_btn">All</button>
+        <a href="#"><button class="filter_data">Laptops</button></a>
+        <a href="#"><button class="filter_data">HTML</button></a>
+        <a href="#"><button class="filter_data">Javascript</button></a>
+        <a href="#"><button class="filter_data">Music</button></a>
+        <a href="#"><button class="filter_data">Mixes</button></a>
+        <a href="#"><button class="filter_data">Live</button></a>
+        <a href="#"><button class="filter_data">Comedy</button></a>
+        <a href="#"><button class="filter_data">Motivation</button></a>
+        <a href="#"><button class="filter_data">Travel</button></a>
+        <a href="#"><button class="filter_data">Watched</button></a>
+        <a href="#"><button class="filter_data">WWE</button></a>
+        <a href="#"><button class="filter_data">PW skills</button></a>
+        <a href="#"><button class="filter_data">Gaming</button></a>
+
+    </div>
+    <div class="youtube_video_container">
+        <div class="first_video">
+            <a href="https://www.youtube.com/watch?v=igfzqDO_9jE" class="first_video_image" target="_blank">
+                <img src="/youtubeImages/first_video.jpg"class="first_thumbnail">
+            </a>
+            <div class="first_video_authorinfo">
+                <div class="first_video_author_face">                
+                    <img src="/youtubeImages/first_author.jpg" class="first_video_author_image">
+                </div>
+                <div class="first_video_description">
+                    <p>Talk with Google Recruiter | Resume, Tier 3, CGPA, Career Gap….</p>
+                </div>
+            </div>
+            <div class="first_video_footer">
+                <div class="first_video_channel">
+                    <p>Fraz</p>
+                </div>
+                <div class="first_video_additionalinfo">
+                    <span>80K views . 6 days ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="second_video">
+            <a href="https://www.youtube.com/watch?v=7xc7-MV7lDA" class="second_video_image" target="_blank">
+                <img src="/youtubeImages/second_video.jpg"class="first_thumbnail">
+            </a>
+            <div class="second_video_authorinfo">
+                <div class="second_video_author_face">                
+                    <img src="/youtubeImages/second_author.jpg" class="second_video_author_image">
+                </div>
+                <div class="second_video_description">
+                    <p>The Fastest way to learn CODING and get a JOB in 2024 🚀🔥 | How to become a Software Engineer</p>
+                </div>
+            </div>
+            <div class="second_video_footer">
+                <div class="second_video_channel">
+                    <p>Nishant Cahar</p>
+                </div>
+                <div class="second_video_additionalinfo">
+                    <span>59K views . 6 weeks ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="third_video video">
+            <a href="https://www.youtube.com/watch?v=5oExKMYIE9U" class="third_video_image" target="_blank">
+                <img src="/youtubeImages/third_video.jpg"class="third_thumbnail">
+            </a>
+            <div class="third_video_authorinfo">
+                <div class="third_video_author_face">                
+                    <img src="/youtubeImages/third_author.jpg" class="third_video_author_image">
+                </div>
+                <div class="third_video_description">
+                    <p>KALAASTAR - Full Video | Honey 3.0 | Yo Yo Honey Singh & Sonakshi Sinha | Zee Music Originals</p>
+                </div>
+            </div>
+            <div class="third_video_footer">
+                <div class="third_video_channel">
+                    <p>Zee Music Company</p>
+                </div>
+                <div class="third_video_additionalinfo">
+                    <span>109M views . 3 weeks ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="fourth_video">
+            <a href="https://www.youtube.com/watch?v=FQp7iI9vjl8&t=141s" class="fourth_video_image" target="_blank">
+                <img src="/youtubeImages/fourth_video.jpg"class="fourth_thumbnail">
+            </a>
+            <div class="fourth_video_authorinfo">
+                <div class="fourth_video_author_face">                
+                    <img src="/youtubeImages/fourth_author.jpg" class="fourth_video_author_image">
+                </div>
+                <div class="fourth_video_description">
+                    <p>Open Seminar at IIT Indore by Shradha Khapra | Apna College</p>
+                </div>
+            </div>
+            <div class="fourth_video_footer">
+                <div class="fourth_video_channel">
+                    <p>Shradha Khapra</p>
+                </div>
+                <div class="fourth_video_additionalinfo">
+                    <span>64K views . 5 days ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="fifth_video">
+            <a href="https://www.youtube.com/watch?v=h_JcE0yHkDo" class="fifth_video_image" target="_blank">
+                <img src="/youtubeImages/fifth_video.jpg"class="fifth_thumbnail">
+            </a>
+            <div class="fifth_video_authorinfo">
+                <div class="fifth_video_author_face">                
+                    <img src="/youtubeImages/fifth_author.jpg" class="fifth_video_author_image">
+                </div>
+                <div class="fifth_video_description">
+                    <p>I Tried Futuristic Luxury Car ! *BMW i7*</p>
+                </div>
+            </div>
+            <div class="fifth_video_footer">
+                <div class="fifth_video_channel">
+                    <p>Tech Burner</p>
+                </div>
+                <div class="fifth_video_additionalinfo">
+                    <span>3.1M views . 2 months ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="sixth_video">
+            <a href="https://www.youtube.com/watch?v=XzbVq_GVZSw" class="sixth_video_image" target="_blank">
+                <img src="/youtubeImages/sixth_video.jpg"class="first_thumbnail">
+            </a>
+            <div class="sixth_video_authorinfo">
+                <div class="sixth_video_author_face">                
+                    <img src="/youtubeImages/sixth_author.jpg" class="sixth_video_author_image">
+                </div>
+                <div class="sixth_video_description">
+                    <p>How to get into Remote Jobs in 2024 - Tier 3 to 3 Remote Job Offers | High Paying Jobs in 2024</p>
+                </div>
+            </div>
+            <div class="sixth_video_footer">
+                <div class="sixth_video_channel">
+                    <p>Technical Suneja</p>
+                </div>
+                <div class="sixth_video_additionalinfo">
+                    <span>37k views . 1 day ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="seventh_video">
+            <a href="https://www.youtube.com/watch?v=W2MfSboIxEo&t=648s" class="seventh_video_image" target="_blank">
+                <img src="/youtubeImages/seventh.video.jpg"class="seventh_thumbnail">
+            </a>
+            <div class="seventh_video_authorinfo">
+                <div class="seventh_video_author_face">                
+                    <img src="/youtubeImages/seventh.author.jpg" class="seventh_video_author_image">
+                </div>
+                <div class="seventh_video_description">
+                    <p>Vicky Kaushal & Bangkok with Dad - Stand Up Comedy By Harsh Gujral</p>
+                </div>
+            </div>
+            <div class="seventh_video_footer">
+                <div class="seventh_video_channel">
+                    <p>Harsh gujral</p>
+                </div>
+                <div class="seventh_video_additionalinfo">
+                    <span>8.1M views . 3 months ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="eigth_video">
+            <a href="https://www.youtube.com/watch?v=DZ6q5X7fAmU" class="eigth_video_image" target="_blank">
+                <img src="/youtubeImages/eigth.video.jpg"class="eigth_thumbnail">
+            </a>
+            <div class="eigth_video_authorinfo">
+                <div class="eigth_video_author_face">                
+                    <img src="/youtubeImages/eigth_author.jpg" class="eigth_video_author_image">
+                </div>
+                <div class="eigth_video_description">
+                    <p>Dubai | Stand Up Comedy | Ft @AnubhavSinghBassi</p>
+                </div>
+            </div>
+            <div class="eigth_video_footer">
+                <div class="eigth_video_channel">
+                    <p>be_a_bassi</p>
+                </div>
+                <div class="eigth_video_additionalinfo">
+                    <span>11M views . 2 weeks ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="ninth_video">
+            <a href="https://www.youtube.com/watch?v=CyXqnaODBaA" class="ninth_video_image" target="_blank">
+                <img src="/youtubeImages/ninth.video.jpg"class="first_thumbnail">
+            </a>
+            <div class="ninth_video_authorinfo">
+                <div class="ninth_video_author_face">                
+                    <img src="/youtubeImages/ninth.author.png" class="ninth_video_author_image">
+                </div>
+                <div class="ninth_video_description">
+                    <p>आप IAS ,IPS बनने लायक हो भी या नहीं ? | Vijender Singh Chauhan | Josh Talks Hindi</p>
+                </div>
+            </div>
+            <div class="ninth_video_footer">
+                <div class="ninth_video_channel">
+                    <p>जोश Talks</p>
+                </div>
+                <div class="ninth_video_additionalinfo">
+                    <span>8.5M views . 1 year ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="tenth_video">
+            <a href="https://www.youtube.com/watch?v=ZtHENvaVrAo" class="tenth_video_image" target="_blank">
+                <img src="/youtubeImages/tenth.video.jpg"class="tenth_thumbnail">
+            </a>
+            <div class="tenth_video_authorinfo">
+                <div class="tenth_video_author_face">                
+                    <img src="/youtubeImages/tenth.author.png" class="tenth_video_author_image">
+                </div>
+                <div class="tenth_video_description">
+                    <p>Best Tech Gifting Products This Festive Season ⚡Feat. Diwali With Mi🔥</p>
+                </div>
+            </div>
+            <div class="tenth_video_footer">
+                <div class="tenth_video_channel">
+                    <p>Trakin Tech</p>
+                </div>
+                <div class="tenth_video_additionalinfo">
+                    <span>110K views . 3 days ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="eleven_video">
+            <a href="https://www.youtube.com/watch?v=i7fMrZy_tbw" class="eleven_video_image" target="_blank">
+                <img src="/youtubeImages/eleven.video.jpg"class="eleven_thumbnail">
+            </a>
+            <div class="eleven_video_authorinfo">
+                <div class="eleven_video_author_face">                
+                    <img src="/youtubeImages/eleven.author.png" class="first_video_author_image">
+                </div>
+                <div class="eleven_video_description">
+                    <p>Top 9 Highest Paying Jobs In 2024 | Roles, Salary & Skill Sets | Tech Jobs Of The Future | @SCALER</p>
+                </div>
+            </div>
+            <div class="eleven_video_footer">
+                <div class="eleven_video_channel">
+                    <p>SCALER</p>
+                </div>
+                <div class="eleven_video_additionalinfo">
+                    <span>4K views . 5 days ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="twelth_video">
+            <a href="https://www.youtube.com/watch?v=1BwrXjgAPvw" class="twelth_video_image" target="_blank">
+                <img src="/youtubeImages/twelth.video.jpg"class="twelth_thumbnail">
+            </a>
+            <div class="twelth_video_authorinfo">
+                <div class="twelth_video_author_face">                
+                    <img src="/youtubeImages/twelth.author.webp" class="twelth_video_author_image">
+                </div>
+                <div class="twelth_video_description">
+                    <p>Kalpana Chawla | Mystery of NASA Columbia Space Disaster | Dhruv Rathee</p>
+                </div>
+            </div>
+            <div class="twelth_video_footer">
+                <div class="twelth_video_channel">
+                    <p>Dhruv Rathee</p>
+                </div>
+                <div class="twelth_video_additionalinfo">
+                    <span>5.6 views . 10 days ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="therteen_video">
+            <a href="https://www.youtube.com/watch?v=LY8FOvmhY4M" class="therteen_video_image" target="_blank">
+                <img src="/youtubeImages/therteen.video.jpg"class="therteen_thumbnail">
+            </a>
+            <div class="therteen_video_authorinfo">
+                <div class="therteen_video_author_face">                
+                    <img src="/youtubeImages/therteen.author.jpg" class="therteen_video_author_image">
+                </div>
+                <div class="therteen_video_description">
+                    <p>Anshul Jubli Vs Sanjeet Budhwar | 29.06.2019 | Matrix Fight Night</p>
+                </div>
+            </div>
+            <div class="therteen_video_footer">
+                <div class="therteen_video_channel">
+                    <p>MFN - Matrix Fight Night</p>
+                </div>
+                <div class="therteen_video_additionalinfo">
+                    <span>1.2M views . 4 years ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="fourteen_video">
+            <a href="https://www.youtube.com/watch?v=oHtAtpTRbzQ" class="fourteen_video_image" target="_blank">
+                <img src="/youtubeImages/fourteen.video.jpg"class="fourteen_thumbnail">
+            </a>
+            <div class="fourteen_video_authorinfo">
+                <div class="fourteen_video_author_face">                
+                    <img src="/youtubeImages/fourteen.author.jpg" class="fourteen_video_author_image">
+                </div>
+                <div class="fourteen_video_description">
+                    <p>Glenn Maxwell hits double-century in Cricket World Cup</p>
+                </div>
+            </div>
+            <div class="fourteen_video_footer">
+                <div class="fourteen_video_channel">
+                    <p>The Sydney Morning Herald and The Age</p>
+                </div>
+                <div class="fourteen_video_additionalinfo">
+                    <span>1.1M views . 1 day ago</span>
+                </div>
+            </div>    
+        </div>
+        <div class="fifteen_video">
+            <a href="https://www.youtube.com/watch?v=igfzqDO_9jE" class="fifteen_video_image" target="_blank">
+                <img src="/youtubeImages/fifteen.video.jpg"class="fifteen_thumbnail">
+            </a>
+            <div class="fifteen_video_authorinfo">
+                <div class="fifteen_video_author_face">                
+                    <img src="/youtubeImages/fifteen.author.jpg" class="fifteen_video_author_image">
+                </div>
+                <div class="fifteen_video_description">
+                    <p>Superstars surprise Roman Reigns: WWE Top 10, Oct. 29, 2023</p>
+                </div>
+            </div>
+            <div class="fifteen_video_footer">
+                <div class="fifteen_video_channel">
+                    <p>WWE</p>
+                </div>
+                <div class="fifteen_video_additionalinfo">
+                    <span>916K views . 11 days ago</span>
+                </div>
+            </div>    
+        </div>
+
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
